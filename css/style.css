@@ -47,7 +47,7 @@ nav{
 .nav-item a:hover{
     border-bottom: 3px solid var(--lime-green);
 }
-#btn{
+#butn{
     border: none;
     border-radius: 20px;
     background: var(--combined-Color);
