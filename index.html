@@ -27,11 +27,12 @@
 
   </head>
   <body>
+    <main aria-role="main page">
     <!-- For the navigation bar -->
     <nav class="navbar navbar-expand-lg" role="navigation">
       <div class="container">
         <div class="navbar-brand" >
-          <img src="images/logo.svg" alt="Easybank logo" href="/" />
+          <img src="images/logo.svg" alt="Easybank logo"/>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
         id="toggler" >
@@ -61,7 +62,7 @@
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ml-md-4 pt-md-1">
-              <button class="btn btn-primary d-none d-md-none d-lg-block" type="button" id="butn" aria-label="request label">
+              <button class="btn btn-primary d-none d-md-none d-lg-block butn" type="button"  aria-label="request label">
                 Request Invite
               </button>
             </li>
@@ -72,7 +73,7 @@
     </nav>
 
     <!-- The details of the company -->
-    <section>
+    <section role="content-info">
       <div class="container">
         <div class="row h-100 align-items-center justify-content-between pt-5">
           <div class="col-lg-6 col-md-7 col-sm-12">
@@ -85,7 +86,7 @@
                   and much more.
                 </p>
                 <div class="text-center text-sm-center text-lg-start text-md-start" aria-label="request invite">
-                  <button class="btn btn-primary butn mt-4 " id="btn">
+                  <button class="btn btn-primary butn mt-4 ">
                     Request Invite
                   </button>
                 </div>
@@ -110,7 +111,7 @@
 
 
     <!-- The first section -->
-    <section class="secnd-sect mt-5">
+    <section class="secnd-sect mt-5" role="contentinfo">
       <div class="container">
         <div class="easy-cont">
           <h2 class="text-sm-center text-center text-lg-start text-md-start">Why choose Easybank?</h2>
@@ -120,32 +121,32 @@
           </p>
         </div>
         <div class="row pt-4">
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <img src="images/icon-online.svg" width="60px" class="d-block mx-auto mx-md-0" alt="easybank icon logo" />
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 brand-logo">
+            <img src="images/icon-online.svg"  class="d-block mx-auto mx-md-0" alt="easybank icon logo" />
             <h3 class="pt-4 text-lg-start text-md-start text-sm-center text-center">Online Banking</h3>
             <p class="pt-2">
               Our modern web and mobile applications allow you to keep track of
               your finances wherever you are in the world.
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <img src="images/icon-budgeting.svg" width="60px" class="d-block mx-auto mx-md-0" alt="budgeting logo"/>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 brand-logo">
+            <img src="images/icon-budgeting.svg"  class="d-block mx-auto mx-md-0" alt="budgeting logo"/>
             <h3 class="pt-4 text-center text-sm-center text-lg-start text-md-start">Simple Budgeting</h3>
             <p class="pt-2">
               See exactly where your money goes each month. Receive
               notifications when you’re close to hitting your limits.
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <img src="images/icon-onboarding.svg" width="60px" class="d-block mx-auto mx-md-0" alt="onboarding logo"/>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 brand-logo">
+            <img src="images/icon-onboarding.svg" class="d-block mx-auto mx-md-0" alt="onboarding logo"/>
             <h3 class="pt-4 text-center text-sm-center text-lg-start text-md-start">Fast Onboarding</h3>
             <p class="pt-2">
               We don’t do branches. Open your account in minutes online and
               start taking control of your finances right away.
             </p>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <img src="images/icon-api.svg" width="60px" class="d-block mx-auto mx-md-0" alt="easybank API logo" />
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 brand-logo">
+            <img src="images/icon-api.svg"  class="d-block mx-auto mx-md-0" alt="easybank API logo" />
             <h3 class="pt-4 text-center text-sm-center text-lg-start text-md-start">Open API</h3>
             <p class="pt-2">
               Manage your savings, investments, pension, and much more from one
@@ -157,19 +158,19 @@
     </section>
 
     <!-- THe last section -->
-    <section class="mt-5 pt-3" id="article">
+    <section class="mt-5 pt-3" id="article" role="articles">
       <div class="container">
         <h2 class=" text-center text-sm-center text-lg-start text-md-start">Latest Articles</h2>
         <div class="row pt-4">
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 brand-image">
             <img
               src="images/image-currency-2.jpg"
               alt="easyBank money"
-              width="100%"
+              
             />
             <div class="p-3 sect3">
               <p sect3><small>By Claire Robinson</small></p>
-             <a href="#" id="article-link"><h3>Receive money in any currency with no fees</h3></a>
+             <a href="#" class="article-link"><h3>Receive money in any currency with no fees</h3></a>
               <p>
                 The world is getting smaller and we’re becoming more mobile. So
                 why should you be forced to only receive money in a single …
@@ -177,15 +178,15 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 brand-image">
             <img
               src="images/image-restaurant.jpg"
               alt="easyBank money"
-              width="100%"
+              
             />
             <div class="p-3 sect3">
               <p><small> By Wilson Hutton</small></p>
-           <a href="#" id="article-link"><h3>Treat yourself without worrying about money</h3></a>
+           <a href="#" class="article-link"><h3>Treat yourself without worrying about money</h3></a>
               <p>
                 Our simple budgeting feature allows you to separate out your
                 spending and set realistic limits each month. That means you …
@@ -193,16 +194,16 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12 d-block mx-auto mx-md-0">
+          <div class="col-lg-3 col-md-6 col-sm-12 d-block mx-auto mx-md-0 brand-image">
             <img
               src="images/image-plane.jpg"
               class="mx-auto"
               alt="easyBank money"
-              width="100%"
+              
             />
             <div class="p-3 sect3">
               <p><small>By Wilson Hutton</small></p>
-            <a href="#" id="article-link"><h3>Take your Easybank card wherever you go</h3></a>
+            <a href="#" class="article-link"><h3>Take your Easybank card wherever you go</h3></a>
               <p>
                 The world is getting smaller and we’re becoming more mobile. So
                 why should you be forced to only receive money in a single …
@@ -210,15 +211,15 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 brand-image">
             <img
               src="images/image-confetti.jpg"
               alt="easyBank money"
-              width="100%"
+              
             />
             <div class="p-3 sect3">
               <p><small>By Claire Robinson</small></p>
-             <a href="#" id="article-link"><h3>Our invite-only Beta accounts are now live!</h3></a>
+             <a href="#" class="article-link"><h3>Our invite-only Beta accounts are now live!</h3></a>
               <p>
                 After a lot of hard work by the whole team, we’re excited to
                 launch our closed beta. It’s easy to request an invite through
@@ -275,7 +276,7 @@
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-row-reverse d-block mx-auto mx-md-0">
             <div class="footer-details  ms-12 ">
-              <button class="btn btn-primary ms-auto " type="button" id="btn">
+              <button class="btn btn-primary ms-auto " type="button" class="bttn">
                 Request Invite
               </button>
               <p class="text-center text-sm-center text-lg-start text-md-center" style="color: hsl(233, 8%, 62%)">
@@ -298,6 +299,8 @@
       </div>
     </footer>
 </body>
+</main>
+</html>
 <script>
   const btn = document.querySelector('#toggler');
   const navbar = document.querySelector('.navigation');
